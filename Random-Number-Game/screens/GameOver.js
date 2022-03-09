@@ -11,7 +11,7 @@ export default function GameOverScreen(props){
             <Text>The Game is Over</Text>
             <Text> Number of Rounds: {props.roundsNumber}</Text>
             <Text>Number was: {props.userNumber} </Text>
-            <Button title='New Game' onPress={}/>
+            <Button title='New Game' onPress={props.onRestart}/>
         </View>
     )
 }
