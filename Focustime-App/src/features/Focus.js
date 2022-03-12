@@ -30,7 +30,7 @@ export default function Focus(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0.2,
   },
   button: {
     justifyContent: 'end',
