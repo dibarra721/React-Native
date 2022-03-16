@@ -33,6 +33,7 @@ function onEnd(){
    Vibration.vibrate(PATTERN)
    setIsStarted(false)
    setProgress(1)
+   props.onTimerEnd(props.focusSubject)
    
 }
 

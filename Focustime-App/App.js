@@ -18,7 +18,7 @@ export default function App() {
 
 const [currentSubject, setCurrentSubject]= useState()
 const [history, setHistory]=useState([])
-
+console.log(history)
 
   return (
     <SafeAreaView style={styles.container}>
@@ -30,7 +30,9 @@ const [history, setHistory]=useState([])
 ): (
  <Timer 
  focusSubject={currentSubject}
- onTimerEnd={() => {}}
+ onTimerEnd={(subject) => {
+   setHistory([...history, subject])
+ }}
  clearSubject= {() => setCurrentSubject(null)}
 
  />
